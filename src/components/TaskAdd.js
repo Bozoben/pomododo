@@ -21,9 +21,9 @@ class TaskAdd extends Component {
 
   render() {
     return (
-      <div >
-      <label htmlFor="tasksToAdd">Nouvelles tâches</label><br/>
-      <textarea name="tasksToAdd" onChange={this.handleChange} value={this.state.tasksToAdd} cols="120" rows="4"/>
+      <div ><h2>Ajouter des tâches</h2>
+      <label htmlFor="tasksToAdd">Saisir une ou plusieurs tâches ici</label><br/>
+      <textarea name="tasksToAdd" onChange={this.handleChange} value={this.state.tasksToAdd} cols="40" rows="4"/>
       <br/>
       <input type="button" onClick={this.addTasks} value="Ajouter"/>
       </div>

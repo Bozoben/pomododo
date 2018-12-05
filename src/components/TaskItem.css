@@ -1,0 +1,12 @@
+.taskItem {
+    display: flex;
+    background-color: #AABBAA;
+    margin: 2px;
+}
+.taskLabel {
+    width:80%;
+    display:block;
+}
+.taskActions {
+    width:20%;
+}

@@ -22,6 +22,30 @@
 .App-intro {
   font-size: large;
 }
+.App-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.App-bloc-50 {
+  flex: 1;
+  width: 49%;
+  display:block;
+  background-color: #BBBBBB;
+  margin:2px;
+  padding: 6px;
+  border-radius: 4px;
+  max-height:300px;
+  overflow:auto;
+}
+.App-bloc-100 {
+  width: 100%;
+  background-color: #CCBBCC;
+  margin: 2px;
+  padding: 6px;
+  border-radius: 4px;
+  text-align: center;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

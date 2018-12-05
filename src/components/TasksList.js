@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TaskListItem from './TaskListItem';
+import TaskItem from './TaskItem';
 import './TasksList.css';
 
 class TasksList extends Component {
@@ -7,11 +7,11 @@ class TasksList extends Component {
     const tasks = (this.props.tasks) ? (this.props.tasks) : [];
 
     return (
-      <div>
+      <div><h2>Mes tâches</h2>
       <ul className="tasklist">
       {tasks.map(function(item,idx){
       return (
-        <li key={idx}><TaskListItem task={item}/>
+        <li key={idx}><TaskItem task={item}/>
         </li>
       )})
       }

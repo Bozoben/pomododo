@@ -31,9 +31,17 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Pomodoro Timer</h1>
         </header><br/>
-        <TaskAdd onAdd={this.addTasks}/>
+        <div className="App-container">
+        <div className="App-bloc-50">
         <TasksList tasks={this.state.tasks}/>
+        </div>
+        <div className="App-bloc-50">
+          <TaskAdd onAdd={this.addTasks}/>
+        </div>        
+        </div>
+        <div className="App-bloc-100">
         <PomodoroTimer maxTime="00:25:00"/>
+        </div>
       </div>
     );
   }
